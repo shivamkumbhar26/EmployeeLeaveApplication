@@ -1,0 +1,3 @@
+Shivam,Suresh,Kumbhar,shivamk@example.com,1234567890,2005-12-26,sarnobatwadi,kolhapur,Maharashtra,416004,emp001,50000,Developer,true,30,30
+Shivam,Suresh,Kumbhar,shivamk@example.com,1234567890,2005-12-26,sarnobatwadi,kolhapur,Maharashtra,416004,emp002,50000,Developer,false,30,30
+Shivam,Suresh,Kumbhar,shivamk@example.com,1234567890,2005-12-26,sarnobatwadi,kolhapur,Maharashtra,416004,emp003,50000,Developer,false,30,30
