@@ -7,7 +7,7 @@ public class EmployeeLogin {
     String password ; 
 
     EmployeeLogin(){
-        
+
     }
 
     EmployeeLogin( String id , String pass ){
@@ -19,11 +19,11 @@ public class EmployeeLogin {
         this.id = empid ; 
     }
     
-    public void setPass( String password){
+    public void setEmpPassword( String password){
         this.password = password ; 
     }
 
-    public boolean authentication(){
+    public Employee login(){
         try (BufferedReader reader = new BufferedReader(new FileReader("empauth.txt"))) {
             String line;
             
@@ -32,10 +32,10 @@ public class EmployeeLogin {
                 String[] part = line.split(" ") ; 
                 if ( part[0].equals(this.id) ){
                     if ( part[1].equals(this.password) ){
-                        return true ; 
+                        return getWho() ; 
                     }
                     else{
-                        return false ; 
+                        return null ; 
                     }
                 }
                
@@ -44,7 +44,7 @@ public class EmployeeLogin {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return false ; 
+        return null ; 
         
     }
 
